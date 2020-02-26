@@ -91,6 +91,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        listLabel.numberOfLines = 0;
+        listLabel.sizeToFit()
     }
 
 
