@@ -9,6 +9,11 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+//    var segCon0 = segmentedControl0()
+//    var segCon1 = segmentedControl1()
+//    var segCon2 = segmentedControl2()
+//    var segCon3 = segmentedControl3()
 
     @IBOutlet weak var channelNumLabel: UILabel!
     var tempChannelNumLabel: String = ""
@@ -76,22 +81,38 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func quickSetControl(_ sender: UISegmentedControl) {
-        if let name = sender.titleForSegment(at: sender.selectedSegmentIndex) {
-            if name == "ABC" {
-                channelNumLabel.text = "7"
-            }
-            else if name == "NBC" {
-                channelNumLabel.text = "5"
-            }
-            
-            else if name == "CBS" {
-                channelNumLabel.text = "2"
-            }
-            else if name == "FOX" {
-                channelNumLabel.text = "32"
-            }
+        switch segmentedControl.selectedSegmentIndex {
+            case 0:
+            segmentedControl.setTitle(segCon0.channelNickname, forSegmentAt: 0)
+                channelNumLabel.text = String(segCon0.channelNumber)
+            case 1:
+            segmentedControl.setTitle(segCon0.channelNickname, forSegmentAt: 0)
+                channelNumLabel.text = String(segCon1.channelNumber)
+            case 2:
+            segmentedControl.setTitle(segCon0.channelNickname, forSegmentAt: 0)
+                channelNumLabel.text = String(segCon2.channelNumber)
+            case 3:
+            segmentedControl.setTitle(segCon0.channelNickname, forSegmentAt: 0)
+                channelNumLabel.text = String(segCon3.channelNumber)
+            default:
+                break
         }
     }
+    
+//    func updateView() {
+//        segmentedControl.setTitle(segCon0.channelNickname, forSegmentAt: 0)
+//        segmentedControl.setTitle(segCon1.channelNickname, forSegmentAt: 1)
+//        segmentedControl.setTitle(segCon2.channelNickname, forSegmentAt: 2)
+//        segmentedControl.setTitle(segCon3.channelNickname, forSegmentAt: 3)
+//    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        segmentedControl.setTitle(segCon0.channelNickname, forSegmentAt: 0)
+        segmentedControl.setTitle(segCon1.channelNickname, forSegmentAt: 1)
+        segmentedControl.setTitle(segCon2.channelNickname, forSegmentAt: 2)
+        segmentedControl.setTitle(segCon3.channelNickname, forSegmentAt: 3)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
