@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gesture_Recognizers_Demo___SB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnT-SA-9YN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sxc-hc-eEm">
+                                <rect key="frame" x="20" y="93" width="374" height="470"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No single tap detected" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzc-Ng-SVH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Xmh-XJ-HHa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No double tap detected" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNL-2u-Xq1">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="J9j-Mv-HdB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No pan gesture detected" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-FV-EzK">
+                                        <rect key="frame" x="0.0" y="100" width="374" height="370"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dJg-FV-EzK" firstAttribute="width" secondItem="Rzc-Ng-SVH" secondAttribute="width" id="eaO-0l-6cb"/>
+                                    <constraint firstItem="hNL-2u-Xq1" firstAttribute="width" secondItem="Rzc-Ng-SVH" secondAttribute="width" id="ttk-cz-IUO"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture Recognizer Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP3-Wp-cYk">
+                                <rect key="frame" x="61" y="44" width="292.5" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="KA4-7G-A1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o5o-Ox-J1w" firstAttribute="bottom" secondItem="sxc-hc-eEm" secondAttribute="bottom" constant="299" id="5xk-Ds-15C"/>
+                            <constraint firstItem="HP3-Wp-cYk" firstAttribute="top" secondItem="o5o-Ox-J1w" secondAttribute="top" id="6gb-vC-Kks"/>
+                            <constraint firstItem="sxc-hc-eEm" firstAttribute="trailing" secondItem="wnT-SA-9YN" secondAttribute="trailingMargin" id="G4g-ty-9Sb"/>
+                            <constraint firstItem="sxc-hc-eEm" firstAttribute="leading" secondItem="wnT-SA-9YN" secondAttribute="leadingMargin" id="XRi-ji-Ua4"/>
+                            <constraint firstItem="HP3-Wp-cYk" firstAttribute="centerX" secondItem="wnT-SA-9YN" secondAttribute="centerX" id="gsd-55-2WP"/>
+                            <constraint firstItem="sxc-hc-eEm" firstAttribute="top" secondItem="HP3-Wp-cYk" secondAttribute="bottom" constant="20" id="scw-rE-aYv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o5o-Ox-J1w"/>
+                    </view>
+                    <connections>
+                        <outlet property="doubleTapLabel" destination="hNL-2u-Xq1" id="qAe-IC-aCs"/>
+                        <outlet property="panLabel" destination="dJg-FV-EzK" id="PVf-XP-FEf"/>
+                        <outlet property="singleTapLabel" destination="Rzc-Ng-SVH" id="IJ0-Zh-D8A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>

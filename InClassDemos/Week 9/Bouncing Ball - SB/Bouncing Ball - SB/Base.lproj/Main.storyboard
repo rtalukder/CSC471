@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8s-GX-G7x">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DV4-OX-Vez">
+            <objects>
+                <viewController id="H8s-GX-G7x" customClass="ViewController" customModule="Bouncing_Ball___SB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RH6-J2-FvS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-Tp-2od" customClass="CanvasView" customModule="Bouncing_Ball___SB">
+                                <rect key="frame" x="4" y="72" width="406" height="752"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.2362607759" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mqa-Nt-DzL">
+                                <rect key="frame" x="18" y="832" width="326" height="31"/>
+                                <connections>
+                                    <action selector="velocityChanged:" destination="H8s-GX-G7x" eventType="valueChanged" id="QAy-et-uGe"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhT-KD-DOz">
+                                <rect key="frame" x="362" y="832" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="startStop:" destination="H8s-GX-G7x" eventType="touchUpInside" id="EuK-yT-x0W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o6h-Tp-2od" firstAttribute="leading" secondItem="RH6-J2-FvS" secondAttribute="leadingMargin" constant="-16" id="3RX-bH-8a2"/>
+                            <constraint firstItem="Mqa-Nt-DzL" firstAttribute="top" secondItem="o6h-Tp-2od" secondAttribute="bottom" constant="8" id="8Rz-D3-cUT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o6h-Tp-2od" secondAttribute="trailing" constant="-16" id="EGF-v6-DgM"/>
+                            <constraint firstItem="man-oz-ji3" firstAttribute="bottom" secondItem="Mqa-Nt-DzL" secondAttribute="bottom" symbolic="YES" id="VCO-mu-D0C"/>
+                            <constraint firstItem="Mqa-Nt-DzL" firstAttribute="leading" secondItem="RH6-J2-FvS" secondAttribute="leadingMargin" id="WHl-Pn-e99"/>
+                            <constraint firstItem="HhT-KD-DOz" firstAttribute="centerY" secondItem="Mqa-Nt-DzL" secondAttribute="centerY" id="ZbN-oH-swR"/>
+                            <constraint firstItem="o6h-Tp-2od" firstAttribute="top" secondItem="RH6-J2-FvS" secondAttribute="topMargin" constant="28" id="tqF-KL-pz5"/>
+                            <constraint firstItem="HhT-KD-DOz" firstAttribute="leading" secondItem="Mqa-Nt-DzL" secondAttribute="trailing" constant="20" id="wAG-1r-ZZq"/>
+                            <constraint firstItem="HhT-KD-DOz" firstAttribute="trailing" secondItem="RH6-J2-FvS" secondAttribute="trailingMargin" id="ysy-Ed-nAl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="man-oz-ji3"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvas" destination="o6h-Tp-2od" id="F4x-Qa-19C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9GJ-4w-v7X" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="-102"/>
+        </scene>
+    </scenes>
+</document>
