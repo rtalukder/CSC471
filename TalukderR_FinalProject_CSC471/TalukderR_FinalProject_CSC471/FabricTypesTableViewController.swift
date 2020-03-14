@@ -24,23 +24,25 @@ class FabricTypesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return fabricTypes.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let fabricType = fabricTypes[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fabricType", for: indexPath)
+        
         // Configure the cell...
-
+        
+        cell.textLabel?.text = fabricType.fabricType
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -58,7 +60,7 @@ class FabricTypesTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -81,10 +83,15 @@ class FabricTypesTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if let fabricVC = segue.destination as? FabricDetailVC {
+           if let indexPath = self.tableView.indexPathForSelectedRow {
+            fabricVC.fabricType = fabricTypes[indexPath.row]
+           }
+       }
     }
-    */
-
 }

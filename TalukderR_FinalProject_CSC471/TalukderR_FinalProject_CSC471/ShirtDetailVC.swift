@@ -9,14 +9,26 @@
 import UIKit
 
 class ShirtDetailVC: UIViewController {
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var shirtImage: UIImageView!
+    
+    var shirtType: TypesShirts?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        if let t = shirtType {
+            titleLabel.text = t.shirtType
+            descriptionLabel.text = t.shirtDescription
+            shirtImage.image = UIImage(named: t.imageFilePath)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,5 +38,4 @@ class ShirtDetailVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

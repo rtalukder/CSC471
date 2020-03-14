@@ -10,13 +10,25 @@ import UIKit
 
 class FabricDetailVC: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var fabricStyleImage: UIImageView!
+    @IBOutlet weak var fabricDescription: UILabel!
+    
+    var fabricType: TypesFabrics?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        if let f = fabricType {
+            titleLabel.text = f.fabricType
+            fabricStyleImage.image = UIImage(named: f.imageFilePath)
+            fabricDescription.text = f.fabricDescription
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

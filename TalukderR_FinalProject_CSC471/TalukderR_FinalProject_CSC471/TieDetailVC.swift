@@ -10,12 +10,23 @@ import UIKit
 
 class TieDetailVC: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tieStyleImage: UIImageView!
+    
+    
+    var tieSytle: TypesTies?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let t = tieSytle {
+            titleLabel.text = t.tieStyleType
+            tieStyleImage.image = UIImage(named: t.imageFilePath)
+        }
+    }
 
     /*
     // MARK: - Navigation

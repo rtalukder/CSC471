@@ -24,12 +24,23 @@ class TieTypesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return tieStyleTypes.count
+    }
+
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tieType = tieStyleTypes[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tieType", for: indexPath)
+        
+        // Configure the cell...
+        
+        cell.textLabel?.text = tieType.tieStyleType
+        return cell
     }
 
     /*
@@ -81,10 +92,15 @@ class TieTypesTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if let tieVC = segue.destination as? TieDetailVC {
+           if let indexPath = self.tableView.indexPathForSelectedRow {
+            tieVC.tieSytle = tieStyleTypes[indexPath.row]
+           }
+       }
     }
-    */
-
 }

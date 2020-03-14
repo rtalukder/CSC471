@@ -9,11 +9,25 @@
 import UIKit
 
 class CollarDetailVC: UIViewController {
-
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var collarImage: UIImageView!
+    
+    var collar: TypesCollars?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let c = collar {
+            titleLabel.text = c.description
+            descriptionLabel.text = c.suitableTies
+            collarImage.image = UIImage(named: c.imageFilePath)
+        }
     }
     
 
