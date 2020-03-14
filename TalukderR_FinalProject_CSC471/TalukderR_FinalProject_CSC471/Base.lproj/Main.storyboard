@@ -202,7 +202,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Pocket Closet" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tFL-lK-q2M">
-                                <rect key="frame" x="101" y="66" width="213" height="43"/>
+                                <rect key="frame" x="102" y="66" width="213" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -249,6 +249,67 @@
             </objects>
             <point key="canvasLocation" x="-14" y="570"/>
         </scene>
+        <!--Collar DetailVC-->
+        <scene sceneID="LSm-ni-QSe">
+            <objects>
+                <viewController id="fSz-QS-Eyy" customClass="CollarDetailVC" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HgS-jB-ifI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bgg-W8-bM0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tt0-hu-PiY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89W-lf-yd8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="698"/>
+        </scene>
+        <!--Tie DetailVC-->
+        <scene sceneID="LH3-7n-adX">
+            <objects>
+                <viewController id="PCE-hR-bIm" customClass="TieDetailVC" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EFP-w5-0Y3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vC6-IC-BFm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HBv-Uo-mWl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dm8-fs-Z8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580" y="698"/>
+        </scene>
+        <!--Closet-->
+        <scene sceneID="Eh6-66-HbV">
+            <objects>
+                <tableViewController id="vag-13-98Z" customClass="ClosetTableViewController" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Mn-KS-3ao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YeZ-qF-eTN">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YeZ-qF-eTN" id="YSE-bn-NBF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vag-13-98Z" id="kUM-EI-zYV"/>
+                            <outlet property="delegate" destination="vag-13-98Z" id="I9Z-cR-f1O"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Closet" id="5oA-vN-Ql3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nay-M5-ID2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1516" y="571"/>
+        </scene>
         <!--Market-->
         <scene sceneID="C1E-8u-gRH">
             <objects>
@@ -280,66 +341,6 @@
             </objects>
             <point key="canvasLocation" x="-759" y="570"/>
         </scene>
-        <!--Closet-->
-        <scene sceneID="yja-3p-0Rw">
-            <objects>
-                <viewController id="noG-Jz-NPH" customClass="AdvisorView" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4lL-j5-n1U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIo-p8-EDh">
-                                <rect key="frame" x="153" y="290" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="PDw-b6-6jt"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Closet" image="first" id="pAp-jZ-cOV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ihB-IK-e7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1507" y="570"/>
-        </scene>
-        <!--Advisor-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="106" y="426.66666666666669" width="202" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="99.666666666666686" y="477.66666666666669" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Advisor" image="second" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-14" y="-158"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -351,8 +352,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="noG-Jz-NPH" kind="relationship" relationship="viewControllers" id="lTa-mH-0xk"/>
+                        <segue destination="7tr-SQ-YXO" kind="relationship" relationship="viewControllers" id="pWx-lF-Vol"/>
+                        <segue destination="vag-13-98Z" kind="relationship" relationship="viewControllers" id="NvB-3S-tyN"/>
                         <segue destination="6Ie-rY-i0i" kind="relationship" relationship="viewControllers" id="Mh8-dF-POX"/>
                         <segue destination="gbs-1Z-wpR" kind="relationship" relationship="viewControllers" id="gdF-mo-aCh"/>
                     </connections>
@@ -361,13 +362,334 @@
             </objects>
             <point key="canvasLocation" x="-759" y="-158"/>
         </scene>
+        <!--Advisor-->
+        <scene sceneID="u01-qo-EkF">
+            <objects>
+                <tableViewController id="7tr-SQ-YXO" customClass="AdvisorView" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dg7-fe-cox">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Style Advisor" id="QG3-qK-bqH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="shirtMenu" textLabel="ax0-7H-jtv" detailTextLabel="hXu-ey-lnn" imageView="oj4-Tz-IJA" rowHeight="110" style="IBUITableViewCellStyleSubtitle" id="sld-Pz-rhR">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sld-Pz-rhR" id="Z70-mL-QTB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Shirt Fits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ax0-7H-jtv">
+                                                    <rect key="frame" x="145" y="35" width="68" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Different shirt types for different occasions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hXu-ey-lnn">
+                                                    <rect key="frame" x="145" y="58.333333333333336" width="244.33333333333334" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="ShirtIcon" id="oj4-Tz-IJA">
+                                                    <rect key="frame" x="20" y="0.0" width="110" height="110"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rgi-rU-p8P" kind="show" id="DcY-Um-yI7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fabricMenu" textLabel="W4T-bB-mKz" detailTextLabel="sHo-LE-lwn" imageView="rUX-sG-lbp" rowHeight="109" style="IBUITableViewCellStyleSubtitle" id="kbc-PB-7EK">
+                                        <rect key="frame" x="0.0" y="138" width="414" height="109"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kbc-PB-7EK" id="xfC-8h-pvj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Fabric Types" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4T-bB-mKz">
+                                                    <rect key="frame" x="144.33333333333334" y="35" width="97.333333333333329" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Shirts are made of many different materials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sHo-LE-lwn">
+                                                    <rect key="frame" x="144.33333333333331" y="58.333333333333336" width="244.33333333333334" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="fabric1" id="rUX-sG-lbp">
+                                                    <rect key="frame" x="20" y="0.0" width="109.33333333333334" height="109"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FNg-vI-Sz2" kind="show" id="Q5p-Lz-8NO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="collarMenu" textLabel="KlH-jM-pAq" detailTextLabel="Ljr-ia-0F3" imageView="08J-cC-sdh" rowHeight="110" style="IBUITableViewCellStyleSubtitle" id="fgb-GD-UCQ">
+                                        <rect key="frame" x="0.0" y="247" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fgb-GD-UCQ" id="O3I-DK-NF8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Collar Styles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KlH-jM-pAq">
+                                                    <rect key="frame" x="145" y="35" width="95.666666666666671" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Expore the different collar types available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ljr-ia-0F3">
+                                                    <rect key="frame" x="145" y="58.333333333333336" width="234.33333333333334" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="collar-13-617261" id="08J-cC-sdh">
+                                                    <rect key="frame" x="20" y="0.0" width="110" height="110"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mvP-Py-zVe" kind="show" id="dEp-AI-guS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tieMenu" textLabel="fdI-cf-cx3" detailTextLabel="rBk-26-AI1" imageView="pQ6-eO-BoU" rowHeight="110" style="IBUITableViewCellStyleSubtitle" id="Zvr-cx-Mfe">
+                                        <rect key="frame" x="0.0" y="357" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zvr-cx-Mfe" id="Vb5-Fd-KNZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tie Styles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fdI-cf-cx3">
+                                                    <rect key="frame" x="145" y="35" width="75" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="The Ultimate Tie Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rBk-26-AI1">
+                                                    <rect key="frame" x="145" y="58.333333333333336" width="130" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="tie" id="pQ6-eO-BoU">
+                                                    <rect key="frame" x="20" y="0.0" width="110" height="110"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sDX-rF-hBZ" kind="show" id="MJP-MR-8jo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="7tr-SQ-YXO" id="agx-0n-rQI"/>
+                            <outlet property="delegate" destination="7tr-SQ-YXO" id="Opb-XI-bre"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Advisor" id="D0D-5L-Qvw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVc-9G-mFE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21.739130434782609" y="-157.36607142857142"/>
+        </scene>
+        <!--Collar Types Table View Controller-->
+        <scene sceneID="ZOa-98-SRR">
+            <objects>
+                <tableViewController id="mvP-Py-zVe" customClass="CollarTypesTableViewController" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WTa-mB-yeI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="collarType" textLabel="VQE-rr-TkS" style="IBUITableViewCellStyleDefault" id="n97-6Q-vAG">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n97-6Q-vAG" id="LZR-Cy-2ul">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VQE-rr-TkS">
+                                            <rect key="frame" x="20" y="0.0" width="355" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fSz-QS-Eyy" kind="show" id="Dm5-dc-MC8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mvP-Py-zVe" id="F2S-HZ-QI1"/>
+                            <outlet property="delegate" destination="mvP-Py-zVe" id="3vX-7E-4oW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="TIC-sw-syr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0a-D0-20I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="-42"/>
+        </scene>
+        <!--Tie Types Table View Controller-->
+        <scene sceneID="VSf-FY-EZ0">
+            <objects>
+                <tableViewController id="sDX-rF-hBZ" customClass="TieTypesTableViewController" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lPn-5D-PtP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tieType" id="8Eb-Iv-xqO">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Eb-Iv-xqO" id="0fZ-HB-wSv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PCE-hR-bIm" kind="show" id="bbG-7e-clT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sDX-rF-hBZ" id="RLZ-dq-GER"/>
+                            <outlet property="delegate" destination="sDX-rF-hBZ" id="GJV-2u-H9S"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="nvF-9b-GeM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpc-KL-uHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580" y="-42"/>
+        </scene>
+        <!--Shirt DetailVC-->
+        <scene sceneID="lLA-OU-nrt">
+            <objects>
+                <viewController id="rwn-Ff-DHm" customClass="ShirtDetailVC" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cj8-3h-a7r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YVi-2g-EmA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LPe-9e-2aS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGH-VX-o2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="-1414"/>
+        </scene>
+        <!--Fabric DetailVC-->
+        <scene sceneID="evI-Ic-T1b">
+            <objects>
+                <viewController id="8zE-Sh-6DR" customClass="FabricDetailVC" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AK5-pd-1oT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zM1-R2-SWm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r1v-mM-puB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biM-gP-EJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580" y="-1414"/>
+        </scene>
+        <!--Shirt Types View Controller-->
+        <scene sceneID="2ES-Qk-ea4">
+            <objects>
+                <tableViewController id="rgi-rU-p8P" customClass="ShirtTypesViewController" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TgO-0p-yfk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shirtType" id="EmH-DM-Aew">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EmH-DM-Aew" id="QUm-t3-sFn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="rwn-Ff-DHm" kind="show" id="MhM-7E-ugU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rgi-rU-p8P" id="TAE-Bp-w9r"/>
+                            <outlet property="delegate" destination="rgi-rU-p8P" id="R8u-ac-ah2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AmF-Zb-PmU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llb-JG-qrp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="-711"/>
+        </scene>
+        <!--Fabric Types Table View Controller-->
+        <scene sceneID="fAR-f0-GOa">
+            <objects>
+                <tableViewController id="FNg-vI-Sz2" customClass="FabricTypesTableViewController" customModule="TalukderR_FinalProject_CSC471" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tO6-eY-c3e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fabricType" id="KBy-Xf-EIv">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KBy-Xf-EIv" id="R8a-D0-MUr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8zE-Sh-6DR" kind="show" id="h0N-tr-oGO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FNg-vI-Sz2" id="KXl-CS-tm4"/>
+                            <outlet property="delegate" destination="FNg-vI-Sz2" id="f66-qv-GL0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DRr-Xp-cR5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUK-MH-GAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="-711"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ShirtIcon" width="512" height="512"/>
+        <image name="collar-13-617261" width="512" height="512"/>
         <image name="dollarsign.circle" catalog="system" width="64" height="60"/>
-        <image name="first" width="30" height="30"/>
+        <image name="fabric1" width="200" height="200"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
         <image name="plus" catalog="system" width="64" height="56"/>
-        <image name="second" width="30" height="30"/>
+        <image name="tie" width="200" height="200"/>
     </resources>
 </document>

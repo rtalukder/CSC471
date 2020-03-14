@@ -1,21 +1,21 @@
 //
-//  AdvisorView.swift
+//  ShirtViewController.swift
 //  TalukderR_FinalProject_CSC471
 //
-//  Created by Raquib Talukder on 3/13/20.
+//  Created by Raquib Talukder on 3/14/20.
 //  Copyright © 2020 DePaul University. All rights reserved.
 //
 
 import UIKit
 
-class AdvisorView: UITableViewController {
+class ShirtViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation

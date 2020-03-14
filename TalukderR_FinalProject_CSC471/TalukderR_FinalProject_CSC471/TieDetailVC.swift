@@ -1,14 +1,14 @@
 //
-//  AdvisorView.swift
+//  TieDetail.swift
 //  TalukderR_FinalProject_CSC471
 //
-//  Created by Raquib Talukder on 3/13/20.
+//  Created by Raquib Talukder on 3/14/20.
 //  Copyright © 2020 DePaul University. All rights reserved.
 //
 
 import UIKit
 
-class AdvisorView: UITableViewController {
+class TieDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
