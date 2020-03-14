@@ -7,26 +7,31 @@
 //
 
 import Foundation
+import UIKit
+
+struct GlobalShirtObjectList {
+    static var shirtObjectList: [Shirt] = []
+}
 
 class Shirt {
+    var shirtPicture: UIImageView
+    var brandField: String
+    var neckSizeField: String
+    var sleeveLengthField: String
+    var fitField: String
+    var colorField: String
+    var fabricField: String
+    var collarField: String
     
-    enum `Type`: String {
-        case red = "red"
-        case white = "white"
-        case rosé = "rose"
-        case sparkling = "sparkling"
+    init(shirtPicture: UIImageView, brandField: String, neckSizeField: String, sleeveLengthField: String, fitField: String, colorField: String, fabricField: String, collarField: String) {
+        
+        self.shirtPicture = shirtPicture
+        self.brandField = brandField
+        self.neckSizeField = neckSizeField
+        self.sleeveLengthField = sleeveLengthField
+        self.fitField = fitField
+        self.colorField = colorField
+        self.fabricField = fabricField
+        self.collarField = collarField
     }
-    
-    var name: String
-    var type: Type
-    var shortDescription: String
-    var longDescription: String
-    
-    init(name: String, type: Type, shortDescription: String, longDescription: String) {
-        self.name = name
-        self.type = type
-        self.shortDescription = shortDescription
-        self.longDescription = longDescription
-    }
-    
 }

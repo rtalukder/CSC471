@@ -43,6 +43,8 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Required to add photos to the item.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Required to add photos to the item. </string>
 	<key>UIRequiredDeviceCapabilities</key>

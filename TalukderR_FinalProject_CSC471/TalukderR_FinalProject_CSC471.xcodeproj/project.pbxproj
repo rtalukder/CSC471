@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		521DC013241C6B3100D76892 /* Shirts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shirts.swift; sourceTree = "<group>"; };
+		521DC013241C6B3100D76892 /* Shirts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shirts.swift; path = ../Shirts.swift; sourceTree = "<group>"; };
 		521DC015241C6F7000D76892 /* CollarTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollarTypes.swift; sourceTree = "<group>"; };
 		52430913241BBE750023B4DF /* TalukderR_FinalProject_CSC471.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalukderR_FinalProject_CSC471.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52430916241BBE750023B4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +54,6 @@
 		5243090A241BBE750023B4DF = {
 			isa = PBXGroup;
 			children = (
-				521DC013241C6B3100D76892 /* Shirts.swift */,
-				521DC015241C6F7000D76892 /* CollarTypes.swift */,
 				52430915241BBE750023B4DF /* TalukderR_FinalProject_CSC471 */,
 				52430914241BBE750023B4DF /* Products */,
 			);
@@ -72,6 +70,8 @@
 		52430915241BBE750023B4DF /* TalukderR_FinalProject_CSC471 */ = {
 			isa = PBXGroup;
 			children = (
+				521DC013241C6B3100D76892 /* Shirts.swift */,
+				521DC015241C6F7000D76892 /* CollarTypes.swift */,
 				52430916241BBE750023B4DF /* AppDelegate.swift */,
 				52430918241BBE750023B4DF /* SceneDelegate.swift */,
 				5243091A241BBE750023B4DF /* FirstViewController.swift */,

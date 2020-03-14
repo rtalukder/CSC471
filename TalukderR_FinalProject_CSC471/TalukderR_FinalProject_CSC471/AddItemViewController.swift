@@ -88,7 +88,13 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         self.imagePickerController = UIImagePickerController.init()
         
         let alert = UIAlertController.init(title: "Select Source Type", message: nil, preferredStyle: .actionSheet)
-    
+
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            alert.addAction(UIAlertAction.init(title: "Camera", style: .default, handler: { (_) in
+                self.presentImagePicker(controller: self.imagePickerController!, source: .camera)
+            }))
+        }
+        
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             alert.addAction(UIAlertAction.init(title: "Photo Library", style: .default, handler: { (_) in
                 self.presentImagePicker(controller: self.imagePickerController!, source: .photoLibrary)
@@ -100,10 +106,9 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
                 self.presentImagePicker(controller: self.imagePickerController!, source: .savedPhotosAlbum)
             }))
         }
+        
         alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel))
-        
         self.present(alert, animated: true)
-        
     }
     
     internal func presentImagePicker(controller: UIImagePickerController , source: UIImagePickerController.SourceType) {
@@ -207,6 +212,8 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     
     @IBAction func addItemButton(_ sender: UIButton) {
+        var textFieldsCompleted: Bool = false
+        
         for textField in textFields {
             if textField.text == "" {
                 let title = "Empty Text Field"
@@ -224,6 +231,9 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
                 present(alertController,
                         animated: true,
                         completion: nil)
+            }
+            else {
+                textFieldsCompleted = true
             }
         }
         if self.shirtPicture.image == nil {
@@ -244,6 +254,38 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
                     completion: nil)
         }
         
+        if self.shirtPicture.image != nil && textFieldsCompleted == true {
+            GlobalShirtObjectList.shirtObjectList.append(Shirt(
+                shirtPicture: shirtPicture,
+                brandField: brandField.text!,
+                neckSizeField: neckSizeField.text!,
+                sleeveLengthField: sleeveLengthField.text!,
+                fitField: fitField.text!,
+                colorField: colorField.text!,
+                fabricField: fabricField.text!,
+                collarField: collarField.text!))
+            
+            let title = "Item Successfully Added"
+            let alertMessage = "Information saved."
+            let alertController =
+                UIAlertController(title: title,
+                                  message: alertMessage,
+                                  preferredStyle: .alert)
+
+            let cancelAction =
+                UIAlertAction(title: "OK",
+                              style: .cancel,
+                              handler: nil)
+            alertController.addAction(cancelAction)
+            present(alertController,
+                    animated: true,
+                    completion: nil)
+        
+            for tf in textFields {
+                tf.text = ""
+            }
+            self.selectedImage = nil
+        }
     }
     
     @IBAction func cancelButton(_ sender: UIButton) {
