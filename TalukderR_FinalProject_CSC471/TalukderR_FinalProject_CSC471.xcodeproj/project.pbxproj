@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521DC014241C6B3100D76892 /* Shirts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC013241C6B3100D76892 /* Shirts.swift */; };
+		521DC016241C6F7000D76892 /* CollarTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC015241C6F7000D76892 /* CollarTypes.swift */; };
 		52430917241BBE750023B4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52430916241BBE750023B4DF /* AppDelegate.swift */; };
 		52430919241BBE750023B4DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52430918241BBE750023B4DF /* SceneDelegate.swift */; };
 		5243091B241BBE750023B4DF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5243091A241BBE750023B4DF /* FirstViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		521DC013241C6B3100D76892 /* Shirts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shirts.swift; sourceTree = "<group>"; };
+		521DC015241C6F7000D76892 /* CollarTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollarTypes.swift; sourceTree = "<group>"; };
 		52430913241BBE750023B4DF /* TalukderR_FinalProject_CSC471.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalukderR_FinalProject_CSC471.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52430916241BBE750023B4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52430918241BBE750023B4DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		5243090A241BBE750023B4DF = {
 			isa = PBXGroup;
 			children = (
+				521DC013241C6B3100D76892 /* Shirts.swift */,
+				521DC015241C6F7000D76892 /* CollarTypes.swift */,
 				52430915241BBE750023B4DF /* TalukderR_FinalProject_CSC471 */,
 				52430914241BBE750023B4DF /* Products */,
 			);
@@ -153,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521DC016241C6F7000D76892 /* CollarTypes.swift in Sources */,
 				5243092D241BE07D0023B4DF /* AdvisorView.swift in Sources */,
 				5243091D241BBE750023B4DF /* SecondViewController.swift in Sources */,
 				5243092F241BE5FA0023B4DF /* MarketView.swift in Sources */,
@@ -160,6 +167,7 @@
 				52430917241BBE750023B4DF /* AppDelegate.swift in Sources */,
 				52430933241BFFAD0023B4DF /* AddItemViewController.swift in Sources */,
 				52430931241BE6C40023B4DF /* ProfileView.swift in Sources */,
+				521DC014241C6B3100D76892 /* Shirts.swift in Sources */,
 				52430919241BBE750023B4DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
