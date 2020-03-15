@@ -15,6 +15,7 @@ struct GlobalShirtObjectList {
 
 class Shirt {
     var shirtPicture: UIImageView
+    var nickName: String
     var brandField: String
     var neckSizeField: String
     var sleeveLengthField: String
@@ -23,9 +24,10 @@ class Shirt {
     var fabricField: String
     var collarField: String
     
-    init(shirtPicture: UIImageView, brandField: String, neckSizeField: String, sleeveLengthField: String, fitField: String, colorField: String, fabricField: String, collarField: String) {
+    init(shirtPicture: UIImageView, nickName: String, brandField: String, neckSizeField: String, sleeveLengthField: String, fitField: String, colorField: String, fabricField: String, collarField: String) {
         
         self.shirtPicture = shirtPicture
+        self.nickName = nickName
         self.brandField = brandField
         self.neckSizeField = neckSizeField
         self.sleeveLengthField = sleeveLengthField

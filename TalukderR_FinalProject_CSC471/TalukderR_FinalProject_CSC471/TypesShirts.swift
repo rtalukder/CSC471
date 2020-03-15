@@ -6,6 +6,8 @@
 //  Copyright © 2020 DePaul University. All rights reserved.
 //
 
+//Information about shirt types taken from: https://www.macys.com/ce/splash/dress-shirt-fit-guide/index
+
 import Foundation
 import UIKit
 

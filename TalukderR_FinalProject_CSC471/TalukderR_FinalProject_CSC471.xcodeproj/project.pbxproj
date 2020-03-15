@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		521DC014241C6B3100D76892 /* Shirts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC013241C6B3100D76892 /* Shirts.swift */; };
+		521DC014241C6B3100D76892 /* Shirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC013241C6B3100D76892 /* Shirt.swift */; };
 		521DC016241C6F7000D76892 /* TypesCollars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC015241C6F7000D76892 /* TypesCollars.swift */; };
 		521DC021241D5D3700D76892 /* ShirtTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC020241D5D3700D76892 /* ShirtTypesTableViewController.swift */; };
 		521DC023241D5E2600D76892 /* FabricTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC022241D5E2600D76892 /* FabricTypesTableViewController.swift */; };
@@ -25,6 +25,7 @@
 		521DC062241D7A3300D76892 /* FabricDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC061241D7A3300D76892 /* FabricDetailVC.swift */; };
 		521DC064241D7A4800D76892 /* ShirtDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC063241D7A4800D76892 /* ShirtDetailVC.swift */; };
 		521DC066241D7A5900D76892 /* TieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC065241D7A5900D76892 /* TieDetailVC.swift */; };
+		521DC068241DAF4000D76892 /* ClosetDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC067241DAF4000D76892 /* ClosetDetailVC.swift */; };
 		52430917241BBE750023B4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52430916241BBE750023B4DF /* AppDelegate.swift */; };
 		52430919241BBE750023B4DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52430918241BBE750023B4DF /* SceneDelegate.swift */; };
 		52430920241BBE750023B4DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5243091E241BBE750023B4DF /* Main.storyboard */; };
@@ -37,7 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		521DC013241C6B3100D76892 /* Shirts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shirts.swift; path = ../Shirts.swift; sourceTree = "<group>"; };
+		521DC013241C6B3100D76892 /* Shirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shirt.swift; path = ../Shirt.swift; sourceTree = "<group>"; };
 		521DC015241C6F7000D76892 /* TypesCollars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesCollars.swift; sourceTree = "<group>"; };
 		521DC020241D5D3700D76892 /* ShirtTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtTypesTableViewController.swift; sourceTree = "<group>"; };
 		521DC022241D5E2600D76892 /* FabricTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricTypesTableViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		521DC061241D7A3300D76892 /* FabricDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricDetailVC.swift; sourceTree = "<group>"; };
 		521DC063241D7A4800D76892 /* ShirtDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtDetailVC.swift; sourceTree = "<group>"; };
 		521DC065241D7A5900D76892 /* TieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieDetailVC.swift; sourceTree = "<group>"; };
+		521DC067241DAF4000D76892 /* ClosetDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetDetailVC.swift; sourceTree = "<group>"; };
 		52430913241BBE750023B4DF /* TalukderR_FinalProject_CSC471.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalukderR_FinalProject_CSC471.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52430916241BBE750023B4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52430918241BBE750023B4DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				5243092E241BE5FA0023B4DF /* MarketView.swift */,
 				5243092C241BE07D0023B4DF /* AdvisorView.swift */,
 				521DC02A241D603A00D76892 /* ClosetTableViewController.swift */,
+				521DC067241DAF4000D76892 /* ClosetDetailVC.swift */,
 				52430923241BBE760023B4DF /* LaunchScreen.storyboard */,
 				52430926241BBE760023B4DF /* Info.plist */,
 				521DC020241D5D3700D76892 /* ShirtTypesTableViewController.swift */,
@@ -121,7 +124,7 @@
 				521DC05F241D7A1B00D76892 /* CollarDetailVC.swift */,
 				521DC02C241D66D300D76892 /* TieTypesTableViewController.swift */,
 				521DC065241D7A5900D76892 /* TieDetailVC.swift */,
-				521DC013241C6B3100D76892 /* Shirts.swift */,
+				521DC013241C6B3100D76892 /* Shirt.swift */,
 				521DC015241C6F7000D76892 /* TypesCollars.swift */,
 				521DC026241D5F5C00D76892 /* TypesFabrics.swift */,
 				521DC028241D5F7700D76892 /* TypesShirts.swift */,
@@ -211,6 +214,7 @@
 				521DC02B241D603A00D76892 /* ClosetTableViewController.swift in Sources */,
 				521DC02F241D67C600D76892 /* TypesTies.swift in Sources */,
 				521DC027241D5F5C00D76892 /* TypesFabrics.swift in Sources */,
+				521DC068241DAF4000D76892 /* ClosetDetailVC.swift in Sources */,
 				521DC062241D7A3300D76892 /* FabricDetailVC.swift in Sources */,
 				5243092F241BE5FA0023B4DF /* MarketView.swift in Sources */,
 				521DC02D241D66D300D76892 /* TieTypesTableViewController.swift in Sources */,
@@ -222,7 +226,7 @@
 				52430933241BFFAD0023B4DF /* AddItemViewController.swift in Sources */,
 				521DC029241D5F7700D76892 /* TypesShirts.swift in Sources */,
 				52430931241BE6C40023B4DF /* ProfileView.swift in Sources */,
-				521DC014241C6B3100D76892 /* Shirts.swift in Sources */,
+				521DC014241C6B3100D76892 /* Shirt.swift in Sources */,
 				52430919241BBE750023B4DF /* SceneDelegate.swift in Sources */,
 				521DC066241D7A5900D76892 /* TieDetailVC.swift in Sources */,
 			);

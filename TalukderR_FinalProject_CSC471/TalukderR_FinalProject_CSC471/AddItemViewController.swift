@@ -14,6 +14,7 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBOutlet weak var shirtPicture: UIImageView!
 
+    @IBOutlet weak var nickName: UITextField!
     @IBOutlet weak var brandField: UITextField!
     @IBOutlet weak var neckSizeField: UITextField!
     @IBOutlet weak var sleeveLengthField: UITextField!
@@ -210,6 +211,16 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         }
     }
     
+    @IBAction func editEnded(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+
+    @IBAction func backgroundTouched(_ sender: UIControl) {
+        for tf in textFields {
+            tf.resignFirstResponder()
+        }
+    }
     
     @IBAction func addItemButton(_ sender: UIButton) {
         var textFieldsCompleted: Bool = false
@@ -236,6 +247,7 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
                 textFieldsCompleted = true
             }
         }
+        
         if self.shirtPicture.image == nil {
             let title = "Empty Image"
             let alertMessage = "Please add an image."
@@ -257,6 +269,7 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         if self.shirtPicture.image != nil && textFieldsCompleted == true {
             GlobalShirtObjectList.shirtObjectList.append(Shirt(
                 shirtPicture: shirtPicture,
+                nickName: nickName.text!,
                 brandField: brandField.text!,
                 neckSizeField: neckSizeField.text!,
                 sleeveLengthField: sleeveLengthField.text!,
@@ -294,6 +307,8 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
         self.shirtPicture.contentMode = .scaleAspectFill
         self.selectImageButton.isEnabled = self.selectedImage == nil
         self.selectImageButton.alpha = 1
@@ -332,23 +347,21 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         collarPicker.delegate = self
         collarPicker.tag = 7
         collarField.inputView = collarPicker
-
-        // Do any additional setup after loading the view.
     }
     
     let brandList = ["", "Alfani", "Arrow", "Bar III", "Bonobos", "BOSS", "Brooks Brothers", "Calvin Klein", "Club Room", "DKNY", "Eagle", "Emporio Armani", "Eton", "Hugo Boss", "INC International Concepts", "Kenneth Cole", "Kenneth Cole Reaction", "Lauren Ralph Lauren", "Lucky Brand", "Michael Kors", "Nautica", "Nine West", "Perry Ellis", "Tasso Elba", "The Tie Bar", "Thomas Pink", "Tiger of Sweeden", "Tommy Hilfiger", "Topman", "Van Hussen", "W.R.K." ]
     
-    let neckSizeList = ["", "14in", "14.5in", "15in", "15.5in", "16in", "16.5in", "17in", "17.5in", "18in", "18.5in", "19in", "19.5in", "20in", "22in"]
+    let neckSizeList = ["", "14in / 36cm", "14.5in / 37cm", "15in / 38cm", "15.5in / 39cm", "16in / 41cm", "16.5in / 42cm", "17in / 43cm", "17.5in / 44cm", "18in / 46cm", "18.5in / 47cm", "19in / 48cm", "19.5in / 49cm", "20in / 51cm", "22in / 56cm"]
     
     let sleeveLengthList = ["", "31/32", "32/33", "33/34", "34/35", "35/36", "36/37", "37/38"]
     
-    let fitList = ["", "Classic Fit", "Slim Fit", "Extra Slim Fit", "Athletic Fit"]
+    let fitList = ["",  "Athletic Fit", "Classic Fit", "Slim Fit", "Extra Slim Fit"]
     
     let colorList = ["", "Black", "Grey", "White", "Off-White", "Beige", "Brown", "Metallic", "Purple", "Blue", "Green", "Yellow", "Orange", "Pink", "Red", "Multi-Color"]
     
-    let fabricTypeList = ["", "Chambray", "Corduroy", "100% Cotton", "Cotton Blend", "Denim", "Flannel", "Jersey Knit", "Linen Blend", "Spandex", "Synthetic", "Twill"]
+    let fabricTypeList = ["", "Broadcloth", "Chambray", "Denim", "Dobby", "Egyptian Cotton", "End On End", "Flannel", "Linen", "Melange", "Oxford Cloth", "Pinpoint Cloth", "Poplin", "Seersucker", "Twill"]
     
-    let collarTypeList = ["", "Foward Point", "Button-Down", "Spread", "Tab", "Cutaway", "Band", "Club", "Pin"]
+    let collarTypeList = ["", "Band", "Club", "Cutaway", "Long Button Down", "Semi Spread", "Short Button Down", "Spread Collar", "Straight Point", "Wingtip"]
     
     /*
     // MARK: - Navigation
@@ -387,5 +400,4 @@ extension AddItemViewController: UIImagePickerControllerDelegate, UINavigationCo
             self.imagePickerController = nil
         }
     }
-    
 }
