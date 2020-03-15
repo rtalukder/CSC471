@@ -16,6 +16,10 @@ class TieDetailVC: UIViewController {
     
     var tieSytle: TypesTies?
     
+    @IBAction func cancelButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -1,14 +1,14 @@
 //
-//  ClosetDetailVC.swift
+//  ClosetDetailedViewController.swift
 //  TalukderR_FinalProject_CSC471
 //
-//  Created by Raquib Talukder on 3/14/20.
+//  Created by Raquib Talukder on 3/15/20.
 //  Copyright © 2020 DePaul University. All rights reserved.
 //
 
 import UIKit
 
-class ClosetDetailVC: UIViewController {
+class ClosetDetailedViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var shirtObjectPicture: UIImageView!
@@ -20,7 +20,6 @@ class ClosetDetailVC: UIViewController {
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var fabricTypeLabel: UILabel!
     @IBOutlet weak var collarTypeLabel: UILabel!
-    
     var shirtObject: Shirt?
     
     override func viewDidLoad() {
@@ -29,7 +28,6 @@ class ClosetDetailVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("will appear")
         if let s = shirtObject {
             titleLabel.text = s.nickName
             nickNameLabel.text = s.nickName
@@ -44,6 +42,7 @@ class ClosetDetailVC: UIViewController {
         }
     }
     
+
     /*
     // MARK: - Navigation
 
@@ -53,4 +52,5 @@ class ClosetDetailVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }

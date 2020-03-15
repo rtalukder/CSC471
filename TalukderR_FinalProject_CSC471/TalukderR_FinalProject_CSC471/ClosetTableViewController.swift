@@ -37,7 +37,6 @@ class ClosetTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shirtObjectType", for: indexPath)
         
         // Configure the cell...
-        
         cell.textLabel?.text = shirtObject.nickName
         return cell
     }
@@ -86,9 +85,10 @@ class ClosetTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        self.tableView.reloadData()
-        if let closetVC = segue.destination as? ClosetDetailVC {
+        //self.tableView.reloadData()
+        if let closetVC = segue.destination as? ClosetDetailedViewController {
            if let indexPath = self.tableView.indexPathForSelectedRow {
+            print ("closet VC set")
             closetVC.shirtObject = GlobalShirtObjectList.shirtObjectList[indexPath.row]
            }
        }

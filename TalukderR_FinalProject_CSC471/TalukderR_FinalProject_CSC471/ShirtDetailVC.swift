@@ -21,6 +21,11 @@ class ShirtDetailVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func cancelButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         if let t = shirtType {
             titleLabel.text = t.shirtType

@@ -26,6 +26,15 @@
 		521DC064241D7A4800D76892 /* ShirtDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC063241D7A4800D76892 /* ShirtDetailVC.swift */; };
 		521DC066241D7A5900D76892 /* TieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC065241D7A5900D76892 /* TieDetailVC.swift */; };
 		521DC068241DAF4000D76892 /* ClosetDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC067241DAF4000D76892 /* ClosetDetailVC.swift */; };
+		521DC06A241EA23600D76892 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC069241EA23600D76892 /* HomeViewController.swift */; };
+		521DC06C241EA5F800D76892 /* ties in Resources */ = {isa = PBXBuildFile; fileRef = 521DC06B241EA5F800D76892 /* ties */; };
+		521DC06E241EA61500D76892 /* shoes in Resources */ = {isa = PBXBuildFile; fileRef = 521DC06D241EA61500D76892 /* shoes */; };
+		521DC070241EA72600D76892 /* ShirtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC06F241EA72600D76892 /* ShirtCollectionViewCell.swift */; };
+		521DC072241EA73300D76892 /* TieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC071241EA73300D76892 /* TieCollectionViewCell.swift */; };
+		521DC074241EA74100D76892 /* ShoeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC073241EA74100D76892 /* ShoeCollectionViewCell.swift */; };
+		521DC076241EAAAA00D76892 /* TieCollectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC075241EAAAA00D76892 /* TieCollectionList.swift */; };
+		521DC078241EAAB600D76892 /* ShoeCollectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC077241EAAB600D76892 /* ShoeCollectionList.swift */; };
+		521DC07A241EC4DD00D76892 /* ClosetDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DC079241EC4DD00D76892 /* ClosetDetailedViewController.swift */; };
 		52430917241BBE750023B4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52430916241BBE750023B4DF /* AppDelegate.swift */; };
 		52430919241BBE750023B4DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52430918241BBE750023B4DF /* SceneDelegate.swift */; };
 		52430920241BBE750023B4DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5243091E241BBE750023B4DF /* Main.storyboard */; };
@@ -57,6 +66,15 @@
 		521DC063241D7A4800D76892 /* ShirtDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtDetailVC.swift; sourceTree = "<group>"; };
 		521DC065241D7A5900D76892 /* TieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieDetailVC.swift; sourceTree = "<group>"; };
 		521DC067241DAF4000D76892 /* ClosetDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetDetailVC.swift; sourceTree = "<group>"; };
+		521DC069241EA23600D76892 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		521DC06B241EA5F800D76892 /* ties */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ties; sourceTree = "<group>"; };
+		521DC06D241EA61500D76892 /* shoes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shoes; sourceTree = "<group>"; };
+		521DC06F241EA72600D76892 /* ShirtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtCollectionViewCell.swift; sourceTree = "<group>"; };
+		521DC071241EA73300D76892 /* TieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieCollectionViewCell.swift; sourceTree = "<group>"; };
+		521DC073241EA74100D76892 /* ShoeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCollectionViewCell.swift; sourceTree = "<group>"; };
+		521DC075241EAAAA00D76892 /* TieCollectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieCollectionList.swift; sourceTree = "<group>"; };
+		521DC077241EAAB600D76892 /* ShoeCollectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCollectionList.swift; sourceTree = "<group>"; };
+		521DC079241EC4DD00D76892 /* ClosetDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetDetailedViewController.swift; sourceTree = "<group>"; };
 		52430913241BBE750023B4DF /* TalukderR_FinalProject_CSC471.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalukderR_FinalProject_CSC471.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52430916241BBE750023B4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52430918241BBE750023B4DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +126,11 @@
 				52430916241BBE750023B4DF /* AppDelegate.swift */,
 				52430918241BBE750023B4DF /* SceneDelegate.swift */,
 				5243091E241BBE750023B4DF /* Main.storyboard */,
+				521DC079241EC4DD00D76892 /* ClosetDetailedViewController.swift */,
+				521DC069241EA23600D76892 /* HomeViewController.swift */,
+				521DC06F241EA72600D76892 /* ShirtCollectionViewCell.swift */,
+				521DC071241EA73300D76892 /* TieCollectionViewCell.swift */,
+				521DC073241EA74100D76892 /* ShoeCollectionViewCell.swift */,
 				52430932241BFFAD0023B4DF /* AddItemViewController.swift */,
 				52430930241BE6C40023B4DF /* ProfileView.swift */,
 				5243092E241BE5FA0023B4DF /* MarketView.swift */,
@@ -125,10 +148,14 @@
 				521DC02C241D66D300D76892 /* TieTypesTableViewController.swift */,
 				521DC065241D7A5900D76892 /* TieDetailVC.swift */,
 				521DC013241C6B3100D76892 /* Shirt.swift */,
+				521DC075241EAAAA00D76892 /* TieCollectionList.swift */,
+				521DC077241EAAB600D76892 /* ShoeCollectionList.swift */,
 				521DC015241C6F7000D76892 /* TypesCollars.swift */,
 				521DC026241D5F5C00D76892 /* TypesFabrics.swift */,
 				521DC028241D5F7700D76892 /* TypesShirts.swift */,
 				521DC02E241D67C600D76892 /* TypesTies.swift */,
+				521DC06D241EA61500D76892 /* shoes */,
+				521DC06B241EA5F800D76892 /* ties */,
 			);
 			path = TalukderR_FinalProject_CSC471;
 			sourceTree = "<group>";
@@ -192,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52430925241BBE760023B4DF /* LaunchScreen.storyboard in Resources */,
+				521DC06C241EA5F800D76892 /* ties in Resources */,
 				52430922241BBE760023B4DF /* Assets.xcassets in Resources */,
+				521DC06E241EA61500D76892 /* shoes in Resources */,
 				521DC05E241D707800D76892 /* shirtTypes in Resources */,
 				521DC031241D688700D76892 /* collarTypes in Resources */,
 				52430920241BBE750023B4DF /* Main.storyboard in Resources */,
@@ -211,16 +240,22 @@
 				521DC016241C6F7000D76892 /* TypesCollars.swift in Sources */,
 				5243092D241BE07D0023B4DF /* AdvisorView.swift in Sources */,
 				521DC023241D5E2600D76892 /* FabricTypesTableViewController.swift in Sources */,
+				521DC070241EA72600D76892 /* ShirtCollectionViewCell.swift in Sources */,
 				521DC02B241D603A00D76892 /* ClosetTableViewController.swift in Sources */,
+				521DC074241EA74100D76892 /* ShoeCollectionViewCell.swift in Sources */,
 				521DC02F241D67C600D76892 /* TypesTies.swift in Sources */,
 				521DC027241D5F5C00D76892 /* TypesFabrics.swift in Sources */,
 				521DC068241DAF4000D76892 /* ClosetDetailVC.swift in Sources */,
+				521DC06A241EA23600D76892 /* HomeViewController.swift in Sources */,
+				521DC076241EAAAA00D76892 /* TieCollectionList.swift in Sources */,
 				521DC062241D7A3300D76892 /* FabricDetailVC.swift in Sources */,
 				5243092F241BE5FA0023B4DF /* MarketView.swift in Sources */,
 				521DC02D241D66D300D76892 /* TieTypesTableViewController.swift in Sources */,
 				52430917241BBE750023B4DF /* AppDelegate.swift in Sources */,
 				521DC021241D5D3700D76892 /* ShirtTypesTableViewController.swift in Sources */,
 				521DC060241D7A1B00D76892 /* CollarDetailVC.swift in Sources */,
+				521DC072241EA73300D76892 /* TieCollectionViewCell.swift in Sources */,
+				521DC07A241EC4DD00D76892 /* ClosetDetailedViewController.swift in Sources */,
 				521DC025241D5ED300D76892 /* CollarTypesTableViewController.swift in Sources */,
 				521DC064241D7A4800D76892 /* ShirtDetailVC.swift in Sources */,
 				52430933241BFFAD0023B4DF /* AddItemViewController.swift in Sources */,
@@ -229,6 +264,7 @@
 				521DC014241C6B3100D76892 /* Shirt.swift in Sources */,
 				52430919241BBE750023B4DF /* SceneDelegate.swift in Sources */,
 				521DC066241D7A5900D76892 /* TieDetailVC.swift in Sources */,
+				521DC078241EAAB600D76892 /* ShoeCollectionList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
