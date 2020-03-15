@@ -15,29 +15,31 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var shoeCollection: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        if collectionView == shirtCollection {
-//            return GlobalShirtObjectList.shirtObjectList.count
-//        }
+        if collectionView == shirtCollection {
+            return GlobalShirtObjectList.shirtObjectList.count
+        }
         if collectionView == tieCollection {
             return tieCollectionList.count
         }
         else if collectionView == shoeCollection {
             return shoeCollectionList.count
         }
-        print(GlobalShirtObjectList.shirtObjectList.count)
-        print(tieCollectionList.count)
-        print(shoeCollectionList.count)
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        if collectionView == shirtCollection{
-//            let cell = shirtCollection.dequeueReusableCell(withReuseIdentifier: "shirtCell", for: indexPath) as! ShirtCollectionViewCell
-//
-//            cell.backgroundColor = UIColor.blue
-//            return cell
-//        }
-         if collectionView == tieCollection {
+        
+        let cell = shoeCollection.dequeueReusableCell(withReuseIdentifier: "shoeCell", for: indexPath) as! ShoeCollectionViewCell
+            
+        cell.myShoeImage.image = UIImage(named: shoeCollectionList[indexPath.row].filePath)
+        
+        if collectionView == shirtCollection {
+            let cell = shirtCollection.dequeueReusableCell(withReuseIdentifier: "shirtCell", for: indexPath) as! ShirtCollectionViewCell
+
+            cell.myShirtImage.image = GlobalShirtObjectList.shirtObjectList[indexPath.row].shirtPicture
+            return cell
+        }
+        else if collectionView == tieCollection {
             let cell = tieCollection.dequeueReusableCell(withReuseIdentifier: "tieCell", for: indexPath) as! TieCollectionViewCell
             
             cell.myTieImage.image = UIImage(named: tieCollectionList[indexPath.row].filePath)
@@ -49,27 +51,47 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
 //            cell.myShirtImage.image = UIImage(named: shoeCollectionList[indexPath.row].filePath)
 //            return cell
 //        }
-        let cell = shoeCollection.dequeueReusableCell(withReuseIdentifier: "shoeCell", for: indexPath) as! ShoeCollectionViewCell
-            
-        cell.myShirtImage.image = UIImage(named: shoeCollectionList[indexPath.row].filePath)
+        
         return cell
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            let alertTitle = "Update Gesture Detected"
+            let alertMessage = "OK to continue."
+            
+            let alertController =
+                UIAlertController(title: alertTitle,
+                                  message: alertMessage,
+                                  preferredStyle: .alert)
 
+            let cancelAction =
+                UIAlertAction(title: "OK",
+                              style: .cancel,
+                              handler: nil)
+            
+            alertController.addAction(cancelAction)
+            shirtCollection.reloadData()
+            present(alertController,
+                    animated: true,
+                    completion: nil)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let itemSize = UIScreen.main.bounds.width/3 - 2
-//
-//        let layout = UICollectionViewFlowLayout()
-//        layout.itemSize = CGSize(width: itemSize, height: itemSize)
-//
-//        layout.minimumInteritemSpacing = 2
-//        layout.minimumLineSpacing = 2
-//
-//        shirtCollection.collectionViewLayout = layout
-//        shoeCollection.collectionViewLayout = layout
-//        tieCollection.collectionViewLayout = layout
+        let itemSize = UIScreen.main.bounds.width/3 - 2
+
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: itemSize, height: itemSize)
+
+        layout.minimumInteritemSpacing = 2
+        layout.minimumLineSpacing = 2
+
+        shirtCollection.collectionViewLayout = layout
+        shoeCollection.collectionViewLayout = layout
+        tieCollection.collectionViewLayout = layout
 
         // Do any additional setup after loading the view.
     }

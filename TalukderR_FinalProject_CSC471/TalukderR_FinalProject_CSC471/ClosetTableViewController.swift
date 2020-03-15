@@ -60,6 +60,29 @@ class ClosetTableViewController: UITableViewController {
             return
         }
     }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            let alertTitle = "Update Gesture Detected"
+            let alertMessage = "OK to continue."
+            
+            let alertController =
+                UIAlertController(title: alertTitle,
+                                  message: alertMessage,
+                                  preferredStyle: .alert)
+
+            let cancelAction =
+                UIAlertAction(title: "OK",
+                              style: .cancel,
+                              handler: nil)
+            
+            alertController.addAction(cancelAction)
+            self.tableView.reloadData()
+            present(alertController,
+                    animated: true,
+                    completion: nil)
+        }
+    }
 
 
     /*
@@ -88,7 +111,6 @@ class ClosetTableViewController: UITableViewController {
         //self.tableView.reloadData()
         if let closetVC = segue.destination as? ClosetDetailedViewController {
            if let indexPath = self.tableView.indexPathForSelectedRow {
-            print ("closet VC set")
             closetVC.shirtObject = GlobalShirtObjectList.shirtObjectList[indexPath.row]
            }
        }

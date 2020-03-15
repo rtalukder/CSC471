@@ -336,7 +336,7 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="myShirtImage" destination="vke-WX-OaN" id="cfa-CT-m0c"/>
+                                            <outlet property="myShoeImage" destination="vke-WX-OaN" id="sjZ-ec-4Ky"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
