@@ -268,7 +268,7 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         if self.shirtPicture.image != nil && textFieldsCompleted == true {
             GlobalShirtObjectList.shirtObjectList.append(Shirt(
-                shirtPicture: shirtPicture,
+                shirtPicture: shirtPicture.image!,
                 nickName: nickName.text!,
                 brandField: brandField.text!,
                 neckSizeField: neckSizeField.text!,
@@ -299,6 +299,62 @@ class AddItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             }
             self.selectedImage = nil
         }
+//        print(GlobalShirtObjectList.shirtObjectList.count)
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            let alertTitle = "Clear Gesture Detected"
+            let alertMessage = "Resume to continue. Clear to restart."
+            
+            let alertController =
+                UIAlertController(title: alertTitle,
+                                  message: alertMessage,
+                                  preferredStyle: .alert)
+
+            let cancelAction =
+                UIAlertAction(title: "Resume",
+                              style: .cancel,
+                              handler: nil)
+            
+            let overrideAction =
+                UIAlertAction(title: "Clear",
+                              style: .destructive,
+                              handler: myUndoHandler)
+            
+            alertController.addAction(cancelAction)
+            alertController.addAction(overrideAction)
+            
+            present(alertController,
+                    animated: true,
+                    completion: nil)
+        }
+    }
+    
+    func myUndoHandler(alert: UIAlertAction) {
+        for tf in textFields {
+            tf.text = ""
+        }
+        self.selectedImage = nil
+        
+        let overrideTitle = "Fields Cleared"
+        let overrideMessage = "All input fields have been cleared."
+        
+        
+        let alertController =
+            UIAlertController(title: overrideTitle,
+                              message: overrideMessage,
+                              preferredStyle: .alert)
+
+        let cancelAction =
+            UIAlertAction(title: "OK",
+                          style: .cancel,
+                          handler: nil)
+        
+        alertController.addAction(cancelAction)
+        present(alertController,
+                animated: true,
+                completion: nil)
     }
     
     @IBAction func cancelButton(_ sender: UIButton) {

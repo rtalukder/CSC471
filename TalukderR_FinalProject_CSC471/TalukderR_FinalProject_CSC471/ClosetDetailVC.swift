@@ -39,7 +39,7 @@ class ClosetDetailVC: UIViewController {
             colorLabel.text = s.colorField
             fabricTypeLabel.text = s.fabricField
             collarTypeLabel.text = s.collarField
-            shirtObjectPicture.image = UIImage(_ s.shirtPicture)
+            shirtObjectPicture.image = s.shirtPicture
         }
     }
     
