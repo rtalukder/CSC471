@@ -81,13 +81,13 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let itemSize = UIScreen.main.bounds.width/3 - 2
+        let itemSize = UIScreen.main.bounds.width/3 - 5
 
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
 
-        layout.minimumInteritemSpacing = 2
-        layout.minimumLineSpacing = 2
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
 
         shirtCollection.collectionViewLayout = layout
         shoeCollection.collectionViewLayout = layout
