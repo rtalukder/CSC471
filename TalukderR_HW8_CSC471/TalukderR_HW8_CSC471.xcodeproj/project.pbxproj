@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52DC723C2420330F00C59737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC723B2420330F00C59737 /* AppDelegate.swift */; };
+		52DC723E2420330F00C59737 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC723D2420330F00C59737 /* SceneDelegate.swift */; };
+		52DC72402420330F00C59737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC723F2420330F00C59737 /* ViewController.swift */; };
+		52DC72432420330F00C59737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DC72412420330F00C59737 /* Main.storyboard */; };
+		52DC72452420331000C59737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DC72442420331000C59737 /* Assets.xcassets */; };
+		52DC72482420331000C59737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DC72462420331000C59737 /* LaunchScreen.storyboard */; };
+		52DC72502420595D00C59737 /* NortheastRegionStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC724F2420595D00C59737 /* NortheastRegionStates.swift */; };
+		52DC72522420596400C59737 /* MidwestRegionStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC72512420596400C59737 /* MidwestRegionStates.swift */; };
+		52DC72542420596C00C59737 /* SouthRegionStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC72532420596C00C59737 /* SouthRegionStates.swift */; };
+		52DC72562420597800C59737 /* WestRegionStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC72552420597800C59737 /* WestRegionStates.swift */; };
+		52DC7258242059C300C59737 /* NortheastTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7257242059C300C59737 /* NortheastTVC.swift */; };
+		52DC725A242059D600C59737 /* MidwestTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7259242059D600C59737 /* MidwestTVC.swift */; };
+		52DC725C242059E200C59737 /* SouthTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC725B242059E200C59737 /* SouthTVC.swift */; };
+		52DC725E242059EE00C59737 /* WestTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC725D242059EE00C59737 /* WestTVC.swift */; };
+		52DC726024205A1A00C59737 /* NortheastDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC725F24205A1A00C59737 /* NortheastDetailVC.swift */; };
+		52DC726224205A2300C59737 /* MidwestDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC726124205A2300C59737 /* MidwestDetailVC.swift */; };
+		52DC726424205A2B00C59737 /* SouthDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC726324205A2B00C59737 /* SouthDetailVC.swift */; };
+		52DC726624205A3200C59737 /* WestDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC726524205A3200C59737 /* WestDetailVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52DC72382420330F00C59737 /* TalukderR_HW8_CSC471.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalukderR_HW8_CSC471.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DC723B2420330F00C59737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52DC723D2420330F00C59737 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52DC723F2420330F00C59737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52DC72422420330F00C59737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52DC72442420331000C59737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52DC72472420331000C59737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52DC72492420331000C59737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DC724F2420595D00C59737 /* NortheastRegionStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NortheastRegionStates.swift; sourceTree = "<group>"; };
+		52DC72512420596400C59737 /* MidwestRegionStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidwestRegionStates.swift; sourceTree = "<group>"; };
+		52DC72532420596C00C59737 /* SouthRegionStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthRegionStates.swift; sourceTree = "<group>"; };
+		52DC72552420597800C59737 /* WestRegionStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestRegionStates.swift; sourceTree = "<group>"; };
+		52DC7257242059C300C59737 /* NortheastTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NortheastTVC.swift; sourceTree = "<group>"; };
+		52DC7259242059D600C59737 /* MidwestTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidwestTVC.swift; sourceTree = "<group>"; };
+		52DC725B242059E200C59737 /* SouthTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthTVC.swift; sourceTree = "<group>"; };
+		52DC725D242059EE00C59737 /* WestTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestTVC.swift; sourceTree = "<group>"; };
+		52DC725F24205A1A00C59737 /* NortheastDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NortheastDetailVC.swift; sourceTree = "<group>"; };
+		52DC726124205A2300C59737 /* MidwestDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidwestDetailVC.swift; sourceTree = "<group>"; };
+		52DC726324205A2B00C59737 /* SouthDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthDetailVC.swift; sourceTree = "<group>"; };
+		52DC726524205A3200C59737 /* WestDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestDetailVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52DC72352420330F00C59737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52DC722F2420330F00C59737 = {
+			isa = PBXGroup;
+			children = (
+				52DC723A2420330F00C59737 /* TalukderR_HW8_CSC471 */,
+				52DC72392420330F00C59737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52DC72392420330F00C59737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52DC72382420330F00C59737 /* TalukderR_HW8_CSC471.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52DC723A2420330F00C59737 /* TalukderR_HW8_CSC471 */ = {
+			isa = PBXGroup;
+			children = (
+				52DC723B2420330F00C59737 /* AppDelegate.swift */,
+				52DC723D2420330F00C59737 /* SceneDelegate.swift */,
+				52DC723F2420330F00C59737 /* ViewController.swift */,
+				52DC724F2420595D00C59737 /* NortheastRegionStates.swift */,
+				52DC7257242059C300C59737 /* NortheastTVC.swift */,
+				52DC725F24205A1A00C59737 /* NortheastDetailVC.swift */,
+				52DC72512420596400C59737 /* MidwestRegionStates.swift */,
+				52DC7259242059D600C59737 /* MidwestTVC.swift */,
+				52DC726124205A2300C59737 /* MidwestDetailVC.swift */,
+				52DC72532420596C00C59737 /* SouthRegionStates.swift */,
+				52DC725B242059E200C59737 /* SouthTVC.swift */,
+				52DC726324205A2B00C59737 /* SouthDetailVC.swift */,
+				52DC72552420597800C59737 /* WestRegionStates.swift */,
+				52DC725D242059EE00C59737 /* WestTVC.swift */,
+				52DC726524205A3200C59737 /* WestDetailVC.swift */,
+				52DC72412420330F00C59737 /* Main.storyboard */,
+				52DC72442420331000C59737 /* Assets.xcassets */,
+				52DC72462420331000C59737 /* LaunchScreen.storyboard */,
+				52DC72492420331000C59737 /* Info.plist */,
+			);
+			path = TalukderR_HW8_CSC471;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52DC72372420330F00C59737 /* TalukderR_HW8_CSC471 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DC724C2420331000C59737 /* Build configuration list for PBXNativeTarget "TalukderR_HW8_CSC471" */;
+			buildPhases = (
+				52DC72342420330F00C59737 /* Sources */,
+				52DC72352420330F00C59737 /* Frameworks */,
+				52DC72362420330F00C59737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalukderR_HW8_CSC471;
+			productName = TalukderR_HW8_CSC471;
+			productReference = 52DC72382420330F00C59737 /* TalukderR_HW8_CSC471.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52DC72302420330F00C59737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "DePaul University";
+				TargetAttributes = {
+					52DC72372420330F00C59737 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 52DC72332420330F00C59737 /* Build configuration list for PBXProject "TalukderR_HW8_CSC471" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52DC722F2420330F00C59737;
+			productRefGroup = 52DC72392420330F00C59737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52DC72372420330F00C59737 /* TalukderR_HW8_CSC471 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52DC72362420330F00C59737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DC72482420331000C59737 /* LaunchScreen.storyboard in Resources */,
+				52DC72452420331000C59737 /* Assets.xcassets in Resources */,
+				52DC72432420330F00C59737 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52DC72342420330F00C59737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DC72502420595D00C59737 /* NortheastRegionStates.swift in Sources */,
+				52DC726424205A2B00C59737 /* SouthDetailVC.swift in Sources */,
+				52DC725E242059EE00C59737 /* WestTVC.swift in Sources */,
+				52DC726624205A3200C59737 /* WestDetailVC.swift in Sources */,
+				52DC72402420330F00C59737 /* ViewController.swift in Sources */,
+				52DC7258242059C300C59737 /* NortheastTVC.swift in Sources */,
+				52DC723C2420330F00C59737 /* AppDelegate.swift in Sources */,
+				52DC723E2420330F00C59737 /* SceneDelegate.swift in Sources */,
+				52DC726024205A1A00C59737 /* NortheastDetailVC.swift in Sources */,
+				52DC72522420596400C59737 /* MidwestRegionStates.swift in Sources */,
+				52DC725A242059D600C59737 /* MidwestTVC.swift in Sources */,
+				52DC726224205A2300C59737 /* MidwestDetailVC.swift in Sources */,
+				52DC72542420596C00C59737 /* SouthRegionStates.swift in Sources */,
+				52DC72562420597800C59737 /* WestRegionStates.swift in Sources */,
+				52DC725C242059E200C59737 /* SouthTVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52DC72412420330F00C59737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DC72422420330F00C59737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52DC72462420331000C59737 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DC72472420331000C59737 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52DC724A2420331000C59737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52DC724B2420331000C59737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52DC724D2420331000C59737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3Q4573F8R;
+				INFOPLIST_FILE = TalukderR_HW8_CSC471/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.depaul.csc471.TalukderR-HW8-CSC471";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52DC724E2420331000C59737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3Q4573F8R;
+				INFOPLIST_FILE = TalukderR_HW8_CSC471/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.depaul.csc471.TalukderR-HW8-CSC471";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52DC72332420330F00C59737 /* Build configuration list for PBXProject "TalukderR_HW8_CSC471" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DC724A2420331000C59737 /* Debug */,
+				52DC724B2420331000C59737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DC724C2420331000C59737 /* Build configuration list for PBXNativeTarget "TalukderR_HW8_CSC471" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DC724D2420331000C59737 /* Debug */,
+				52DC724E2420331000C59737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52DC72302420330F00C59737 /* Project object */;
+}
